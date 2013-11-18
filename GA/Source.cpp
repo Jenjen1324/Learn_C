@@ -61,19 +61,19 @@
 //	return 0;
 //}
 
-//// Aufgabe 6
-//int main(void)
-//{
-//	int start = 0;
-//	int stop = 50;
-//	int step = 10;
-//
-//	printf("Temperaturumrechnung\nCelsius         Farenheit\n---------------------------------\n");
-//	for(start; start <= stop; start = start+step)
-//	{
-//		printf("%d               %d\n",start,start*9/5+32);
-//	}
-//}
+// Aufgabe 6
+int main(void)
+{
+	int start = 0;
+	int stop = 50;
+	int step = 10;
+
+	printf("Temperaturumrechnung\nCelsius         Farenheit\n---------------------------------\n");
+	for(start; start <= stop; start = start+step)
+	{
+		printf("%d               %d\n",start,start*9/5+32);
+	}
+}
 
 
 // Aufgabe 7
