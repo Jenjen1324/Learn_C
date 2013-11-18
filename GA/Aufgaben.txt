@@ -1,0 +1,20 @@
+GC
+
+Aufgabe 1
+
+TC1
+a) A
+b) A
+c) B
+d) B
+
+TC2
+a) A
+b) B
+c) B
+d) A
+e) A
+
+
+Aufgabe 2
+
