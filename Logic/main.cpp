@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void)
+/*int main(void)
 {
 	char c;
 
@@ -15,4 +15,10 @@ int main(void)
 	printf("\n\nGültige eingabe!");
 
 	printf("Ende");
+}*/
+
+int main(void)
+{
+	printf("%d", 6 % 5);
+	getc(stdin);
 }
