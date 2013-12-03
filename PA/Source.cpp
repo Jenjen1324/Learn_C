@@ -92,7 +92,7 @@ void A1(void)
 		printf("aUfsteigend/aBsteigend? (u/b) ");
 		scanf("%c", &c);
 		fflush(stdin);
-		if (c == 'u')
+		if (c != 'u')
 		{
 			printf(msg_g, r1);
 			printf(msg_m, r2);
@@ -153,7 +153,7 @@ void A3(void)
 				scanf("%d", &input);
 
 				cont = true;
-				if (input < kapital)
+				if (input <= kapital)
 				{
 					if (input % 100 == 0)
 					{

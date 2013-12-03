@@ -8,7 +8,7 @@ void A5(void);
 
 int main(void)
 {
-	A2();
+	A4();
 	fflush(stdin);
 	getc(stdin);
 }
@@ -41,10 +41,11 @@ void A2(void)
 		if (a[i] == 0)
 			break;
 		sum += a[i];
+		i++;
 	} while (true);
 
 	printf("Summe: %d\n", sum);
-	printf("Mittelwert: %d", sum / i);
+	printf("Mittelwert: %d", sum / i); // -> FLoat
 }
 
 void A4(void)
