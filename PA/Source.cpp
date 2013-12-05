@@ -1,3 +1,18 @@
+/*######################################################################
+#
+# Programmname: Source.cpp
+# Beschreibung: Aufgaben der Kompetenz PA
+#
+# Version:      1.0
+# Erstellt am:  03.12.2013
+# Autor:        Jens Vogler
+# Copyright:    Jens Vogler 2013
+#
+# Aenderungen
+# 2013-12-03    vn  V1.0    Erstellung des Programms
+#
+######################################################################*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -89,6 +104,8 @@ void A1(void)
 			}
 		}
 		
+
+		// Ausgabe der Nachricht
 		printf("aUfsteigend/aBsteigend? (u/b) ");
 		scanf("%c", &c);
 		fflush(stdin);
@@ -114,11 +131,13 @@ void A1(void)
 /// AUFGABE 3
 void A3(void)
 {
+	// Variabeln deklaration
 	const int pinCode = 1234;
 	int kapital = 450;
 	int input = 0;
 	bool main;
 
+	// PIN Eingabe
 	for (int i = 1; input != pinCode; i++)
 	{
 		printf("Geben sie Ihren Pincode ein (%d. Versuch) > ", i);
@@ -132,20 +151,25 @@ void A3(void)
 	}
 	do
 	{
+		// Hauptmenue
 		main = true;
 		printf("Hauptmenue\n1) Ausloggen\n2) Kontostand anschauen\n3) Geld abheben\nAuswahl ? > ");
 		scanf("%d", &input);
 		fflush(stdin);
 
+		// Auswahl
 		switch (input)
 		{
 		case 1:
+			// Ausloggen
 			main = false;
 			break;
 		case 2:
+			// Kontostand abrufen
 			printf("Kontostand: %d\n\n", kapital);
 			break;
 		case 3:
+			// Abheben
 			bool cont;
 			do
 			{
@@ -153,10 +177,12 @@ void A3(void)
 				scanf("%d", &input);
 
 				cont = true;
+				// Kontrollieren ob die eingabe richtig war
 				if (input <= kapital)
 				{
 					if (input % 100 == 0)
 					{
+						// Abheben
 						printf("Ausgabe %d\n", input);
 						kapital -= input;
 						printf("(Es verbleiben CHF %d auf dem Konto.)\n", kapital);
@@ -172,7 +198,7 @@ void A3(void)
 				{
 					printf("Achting: Nicht genug Guthaben");
 				}
-			} while (cont);
+			} while (cont); // Bis man eine Eingabe richtig gemacht hat
 			break;
 		}
 	} while (main);
@@ -184,19 +210,24 @@ void A3(void)
 /// AUFGABE 4
 void A4(void)
 {
+	// Variabel deklarieren
 	int a[100];
+	// Zufällige Zahlen initialisieren
 	srand(time(NULL));
 
+	// Zufällige Zahlen generieren
 	for (int i = 0; i < 100; i++)
 	{
 		a[i] = rand() % 1000;
 	}
 
+	// Zufällige Zahlen ausgeben
 	for (int i = 0; i < 100; i++)
 	{
 		printf("%d ",a[i]);
 	}
 
+	// Sortieren
 	int i, j, n = 100, temp;
 	for (i = 0; i<n; i++)
 	{
@@ -211,6 +242,7 @@ void A4(void)
 		}
 	}
 
+	// Sortierte Zahlen ausgeben
 	printf("\n\n");
 	for (int i = 0; i < 100; i++)
 	{

@@ -1,3 +1,18 @@
+/*######################################################################
+#
+# Programmname: Source.cpp
+# Beschreibung: Aufgaben der Kompetenz PB
+#
+# Version:      1.0
+# Erstellt am:  03.12.2013
+# Autor:        Jens Vogler
+# Copyright:    Jens Vogler 2013
+#
+# Aenderungen
+# 2013-12-03    vn  V1.0    Erstellung des Programms
+#
+######################################################################*/
+
 #include <stdio.h>
 #include <ctype.h>
 
